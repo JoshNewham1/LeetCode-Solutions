@@ -1,0 +1,16 @@
+{
+  "name": "josh-leetcode-solutions",
+  "version": "1.0.0",
+  "description": "JS solutions to LeetCode problems, in prep for tech interviews",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon 1_twoSum.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "leetcode-solutions"
+  },
+  "author": "Josh Newham",
+  "license": "ISC"
+}
