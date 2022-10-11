@@ -3,7 +3,7 @@
 // Time - 175ms
 // Memory - 43.7MB
 // Most of the performance issues lie in the deep clone needed on line 7
-const twoSumApproachOne = function (nums, target) {
+const twoSum_1 = function (nums, target) {
   const sorted = [...nums].sort((a, b) => a - b);
   const getOriginalIndex = (i) => {
     const originalIndex = nums.findIndex((val) => val === i);
@@ -28,14 +28,14 @@ const twoSumApproachOne = function (nums, target) {
 };
 
 console.log("Approach 1:");
-console.log(twoSumApproachOne([2, 7, 11, 15], 9));
-console.log(twoSumApproachOne([3, 2, 4], 6));
+console.log(twoSum_1([2, 7, 11, 15], 9));
+console.log(twoSum_1([3, 2, 4], 6));
 
 // Using a hash map with the value -> indices and searching for a difference value
 // that will make the target number. Populating hash map in same loop as search
 // Time - 106ms
 // Memory - 43.7MB
-const twoSumApproachTwo = function (nums, target) {
+const twoSum_2 = function (nums, target) {
   const indices = new Map();
 
   for (let i = 0; i < nums.length; i++) {
@@ -48,5 +48,5 @@ const twoSumApproachTwo = function (nums, target) {
 };
 
 console.log("Approach 2:");
-console.log(twoSumApproachTwo([2, 7, 11, 15], 9));
-console.log(twoSumApproachTwo([3, 2, 4], 6));
+console.log(twoSum_2([2, 7, 11, 15], 9));
+console.log(twoSum_2([3, 2, 4], 6));
