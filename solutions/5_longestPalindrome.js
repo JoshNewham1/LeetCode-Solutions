@@ -1,10 +1,11 @@
+// https://leetcode.com/problems/longest-palindromic-substring
 // Test cases:
 // 1. No palindrome
 // 2. Palindrome is of the same characters (e.g. "cbbd")
 // 3. Palindrome is of all different character (e.g. "kayak")
 
 // When we encounter a repeated letter, start backtracking and checking for palindromes
-// Time - 7438ms (pretty terrible thanks to the while loop triggering at all duplicate letters)
+// Time - 7438ms (O(n^3)) pretty terrible thanks to the while loop triggering at all duplicate letters)
 // Memory - 48.4MB
 
 /**
